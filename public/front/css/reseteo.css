@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document By Fizz Estudio Gráfico - www.fizz.cl */
+
+/****** BODY ****/
+* {
+	margin:0; 
+	padding:0;
+	box-sizing:border-box;
+	font: 400 12px 'Open Sans', sans-serif;
+
+	}
+
+body {background-color:#f8f8f8;}
+
+/* VARIABLE SETS */
+h1, h2, h3, h4, h5, h6 { margin: 0px; padding: 0px; letter-spacing: -0.03em; font-weight: 400; color:#333; }
+a { text-decoration: none;}
+a:hover { text-decoration: underline; }
+a:active{outline:none}
+a:focus{outline:thin dotted}
+
+/****** TRANSICION ****/
+a, a:hover, input[type=submit], input[type=button], input[type=reset],a.btn, btn, input[type=submit]:hover, input[type=button]:hover, input[type=reset]:hover{
+-webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out;}
+
+/****** SIN TRANSICION ****/
+.slider a {-webkit-transition: none; -moz-transition: none; -ms-transition: none; -o-transition: none; transition: none;}
+
+
+.borde-redondeado {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	}
+	
+.borde-redondeado-blanco {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	border:#FFF solid 1px;
+	}
+
+.img-responsive {
+	width:100%;
+	height:auto;
+	}
+
+.clear {
+	clear:both;
+	display:block;
+	padding:0px;
+	margin: 0px;
+	}

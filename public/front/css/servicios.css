@@ -1,0 +1,167 @@
+
+.servicios {
+	width: 100%;
+	height: auto;
+}
+
+
+.servicio-fondo1 {background-color: #e8324a !important;}
+.servicio-fondo2 {background-color: #5f2a70 !important;}
+.servicio-fondo3 {background-color: #5f2a70 !important;}
+
+.color-caja1 {background-color: #5b3b7c !important;}
+.color-caja2 {background-color: #4062a7 !important;}
+.color-caja3 {background-color: #ca8204 !important;}
+.color-caja4 {background-color: #362100 !important;}
+.color-caja5 {background-color: #003a2e !important;}
+
+.servicios img {
+	width: 100%;
+	height: auto;
+}
+
+.contenedor-pagina-servicios {
+	width: 100%;
+	max-width: 1200px;
+	padding: 50px 50px;
+	margin: auto;
+}
+
+.contenedor-pagina-servicios img {
+	width: 100%;
+	max-width: 800px;
+    margin-top: 20px;
+}
+
+.contenedor-pagina-servicios h1 {
+	width: 100%;
+	font-size: 30px;
+	font-weight: 900;
+	text-align: left;
+	color: #FFF;
+}
+
+.contenedor-pagina-servicios h1 span {
+	width: 100%;
+	font-size: 30px;
+	font-weight: 300;
+	text-align: center;
+	color: #FFF;
+}
+
+.contenedor-pagina-servicios h2 {
+	width: 100%;
+	font-size: 20px;
+	font-weight: 700;
+	text-align: left;
+	color: #FFF;
+	padding-top: 20px;
+	border-bottom: 1px dashed #ff8e43;
+}
+
+.contenedor-pagina-servicios p {
+	width: 100%;
+	font-size: 14px;
+	font-weight: 400;
+	text-align: justify;
+	color: #FFF;
+	margin: 10px 0px;
+}
+
+.contenedor-pagina-servicios ul {
+	padding: 10px 0px 10px 40px;
+}
+
+.contenedor-pagina-servicios li {
+	width: 100%;
+	font-size: 14px;
+	font-weight: 400;
+	text-align: left;
+	color: #FFF;
+	margin: 5px 0px;
+}
+
+.contenedor-pagina-servicios li span{
+	font-size: 14px;
+	font-weight: 900;
+}
+
+.contenedor-pagina-servicios div {
+	display: inline-block;
+	color: #FFF;
+	padding: 15px;
+	font-size: 18px;
+	font-weight: 700;
+	margin: 20px 0px;
+}
+
+.contenedor-pagina-servicios table {
+	margin:20px auto;
+	width:70%;
+}
+
+.contenedor-pagina-servicios td {
+	width: 100%;
+	font-size: 14px;
+	font-weight: 400;
+	color: #FFF;
+	padding: 10px;
+	border: 1px solid #ff6600;
+}
+
+.contenedor-pagina-servicios td span{
+	font-size: 14px;
+	font-weight: 900;
+	text-align: center;
+	display: block;
+}
+
+/******************************** MODO RESPONSIVO ****************************/
+/******************************** MODO RESPONSIVO ****************************/
+/******************************** MODO RESPONSIVO ****************************/
+
+@media (max-width: 768px) {
+
+.contenedor-pagina-servicios {
+	padding: 30px 15px;
+}
+
+.contenedor-pagina-servicios h1 {
+	font-size: 20px;
+}
+
+.contenedor-pagina-servicios h1 span {
+	font-size: 20px;
+}
+
+.contenedor-pagina-servicios p {
+	font-size: 12px;
+    text-align: left;
+}
+
+.contenedor-pagina-servicios ul {
+	padding: 10px 30px;
+}
+
+.contenedor-pagina-servicios li {
+	font-size: 12px;
+    text-align: left;
+}
+
+.contenedor-pagina-servicios div {
+	display: inline-block;
+	color: #FFF;
+	padding: 15px;
+	background-color: #5b3b7c;
+	font-size: 14px;
+	font-weight: 700;
+	text-align: center;
+	margin: 20px auto;
+}
+
+
+.contenedor-pagina-servicios table {
+	width:100%;
+}
+
+}

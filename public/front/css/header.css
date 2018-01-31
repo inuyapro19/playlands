@@ -1,0 +1,245 @@
+header { /* (basico) */
+	height: 210px;
+	background-image: url(../imagenes/fondo-header.jpg);
+	color: #fff;
+	background-size: cover;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+
+	z-index:9999999 !important;
+	position: relative;
+}
+
+/* activar esta regla para que el menu ocupe el 100% del ancho 
+y desactivar regla "#contenedor-menu" y "header" (basico) de arriba
+
+header {
+	height: 50px;
+	background: #CE852A;
+	color: #fff;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+*/
+
+#contenedor-header {
+	width: 100%;
+	max-width: 1200px;
+	padding: 0px 50px;
+	margin: auto;
+	height: 150px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+#contenedor-menu { /* restringue el espacio central del menu*/
+	width: 100%;
+	height: 60px;
+	margin: auto;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	background-color: #ffae00;
+}
+
+#btn-menu { /*oculta el checkbox*/
+	display: none;
+}
+
+header label { /* menu barrar responsivo oculto*/
+	cursor: pointer;
+	display: none;
+}
+
+header label .fa,.fa-bars { /* menu barrar responsivo oculto FORZADO*/
+	display: none;
+	padding: 0px;
+	margin-right: 15px;
+}
+
+.menu ul { /*ordena la lista de manera horizontal*/
+	/*background: #018AD2;*/
+	background-color: rgba(255,174,0,0.8);
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	list-style: none;
+}
+
+.menu ul ul { /*para ocultar el submenu*/
+	display: none;
+}
+
+.menu a { /*botones del menu*/
+	display: block;
+	padding: 20px 25px;
+	color: #fff;
+	text-decoration: none;
+	font: 400 16px 'Fredoka One', cursive;
+	letter-spacing: 1px;
+}
+
+.menu a:hover { /* color hover de los botones */
+	background: rgba(0,0,0,0.3);
+}
+
+.menu a i { /*margen para separar flechas del texto en menu desplegable */
+	margin-left: 10px;
+}
+
+.menu ul li:hover ul{ /*hace aparecer el submenu al pasar por encima*/
+	display: block;
+	position: absolute;
+}
+
+#foto-redcompra {
+	height: 110px;
+	width: auto;
+}
+
+#foto-logo {
+	height: 120px;
+	width: auto;
+}
+
+
+/******************************** MODO RESPONSIVO ****************************/
+/******************************** MODO RESPONSIVO ****************************/
+/******************************** MODO RESPONSIVO ****************************/
+
+@media (max-width: 768px) {
+
+header { /*mantener menu siempre visible en modo responsive*/
+	width: 100%;
+	height: 60px;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: reverse;
+	-webkit-flex-direction: column-reverse;
+	    -ms-flex-direction: column-reverse;
+	        flex-direction: column-reverse;
+}
+
+header label { /*muestra el menu*/
+	display: block;
+}
+
+header label .fa,.fa-bars { /*muestra icono MENU forzado*/
+	display: block;
+}
+
+.logo-responsive {
+	width: 100%;
+	height: 100px;
+	background-image: url(../imagenes/fondo-header.jpg);
+	color: #fff;
+	background-size: cover;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	border-bottom: 4px solid #9ABE12;
+	margin-bottom: -4px;
+}
+
+.logo-responsive img {
+	width: auto;
+	height: 100px;
+	padding: 10px;
+	margin: auto;
+	display: block;
+}
+
+#contenedor-header {
+	display: none;
+}
+
+#contenedor-menu { /* restringue el espacio central del menu*/
+	-webkit-box-pack: end;
+	-webkit-justify-content: flex-end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
+}
+
+.menu {
+	position: absolute;
+	top: 60px; /*posicion altura de separacion del menu (en modo NO RESPONSIVO)*/
+	left:0; /*posicion izquierda de separacion del menu*/
+	width: 100%; /*ancho del menu responsivo*/
+	-webkit-transform: translateX(-100%);
+	    -ms-transform: translateX(-100%);
+	        transform: translateX(-100%); /*menu se desliza de izquierda a derecha ESCONDIDO*/
+	-webkit-transition: all 0.3s;
+	        transition: all 0.3s; /* transicion suave del menu*/
+}
+
+.texto-menu {
+	font: 400 20px 'Fredoka One';
+	margin-right: 15px;
+}
+
+.letra-facebook { /*botones del menu*/
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	font: 400 16px 'Fredoka One';
+}
+
+.menu ul {
+	display: block;
+}
+
+.menu ul li:hover ul {
+	display: none;
+	position: static;
+}
+
+.menu a i { /*posicion del icono de menu (barritas) */
+	position: absolute;
+	right: 15px;*/
+}
+
+#btn-menu:checked ~ .menu { /* menu se desliza de izquierda a derecha VISIBLE */
+	transform: translateX(0%);
+}
+
+.menu ul ul {
+	background: rgba(0,0,0,0.4); /*color de fonde de los submenus en modo responsivo*/
+}
+
+.menu ul ul a { /* padding izquierdo del submenu */
+	padding-left: 40px;
+}
+
+}

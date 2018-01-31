@@ -1,0 +1,310 @@
+/************************************* FOOTER *************************************/
+
+.footer {
+	width: 100%;
+	background-color: #018AD2;
+}
+
+.contenedor-footer {
+	width: 100%;
+	max-width: 1200px;
+	padding: 20px 50px 10px 50px;
+	margin: auto;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+
+.footer-logo {
+	width: 100%;
+	max-width: 230px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+.footer-logo img{
+	width: 100%;
+	height: auto;
+}
+
+.footer-contacto {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+	padding-top: 15px;
+    margin-left: 30px;
+}
+
+.footer-contacto h3{
+	color: #FFF;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.footer-contacto p {
+	color: #FFF;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.footer-redes {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+	padding-top: 15px;
+	padding-left: 20px;
+}
+
+.footer-redes h3{
+	color: #FFF;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.footer-redes-icons a{
+	color: #FFF;
+	padding: 5px 5px 5px 0px;
+}
+
+.footer-redes-icons a:hover{
+	color: #14394c;
+}
+
+.footer-firma {
+	width: 20%;
+	padding-bottom: 10px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: end;
+	-webkit-align-items: flex-end;
+	    -ms-flex-align: end;
+	        align-items: flex-end;
+}
+
+.footer-firma p {
+	color: #FFF;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+.footer-firma a {
+	color: #ffcc00;
+	font-size: 12px;
+	font-weight: 700;
+}
+
+.wifi {
+	max-width: 100px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+}
+
+.wifi p {
+	color: #FFF;
+	font-size: 16px;
+	font-weight: 700;
+	text-align: center;
+}
+
+.wifi p i{
+	font-weight: 400;
+}
+
+/******************************** MODO RESPONSIVO ****************************/
+/********************************      1200       ****************************/
+/******************************** MODO RESPONSIVO ****************************/
+
+@media (max-width: 1200px) {
+
+.footer-firma {
+	width: auto;
+}
+
+
+}
+
+
+
+/******************************** MODO RESPONSIVO ****************************/
+/********************************      1000       ****************************/
+/******************************** MODO RESPONSIVO ****************************/
+
+@media (max-width: 1000px) {
+
+.footer-logo {
+	max-width: 150px;
+	height: auto;
+}
+
+}
+
+
+/******************************** MODO RESPONSIVO ****************************/
+/********************************       768       ****************************/
+/******************************** MODO RESPONSIVO ****************************/
+
+@media (max-width: 768px) {
+
+
+.contenedor-footer {
+	width: 100%;
+	max-width: 1200px;
+	padding: 20px 20px;
+	margin: auto;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+.footer-logo {
+	width: 50%;
+	height: auto;
+}
+
+.footer-contacto {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	padding-top: 15px;
+}
+
+.footer-contacto h3{
+	color: #FFF;
+	font-size: 14px;
+	font-weight: 700;
+	text-align: center;
+}
+
+.footer-contacto p {
+	color: #FFF;
+	font-size: 10px;
+	font-weight: 400;
+	text-align: center;
+}
+
+.footer-redes {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	padding-top: 15px;
+}
+
+.footer-redes h3{
+	color: #FFF;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.footer-redes-icons {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+
+.footer-firma {
+	width: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+.footer-firma p {
+	color: #FFF;
+	font-size: 10px;
+	font-weight: 400;
+}
+
+.footer-firma a {
+	color: #ffcc00;
+	font-size: 10px;
+	font-weight: 700;
+}
+
+
+}

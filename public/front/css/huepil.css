@@ -1,0 +1,486 @@
+@-webkit-keyframes fake {
+  from {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+  to {
+    opactity: 1;
+  }
+}
+@keyframes fake {
+  from {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+  to {
+    opactity: 1;
+  }
+}
+body {
+  -webkit-animation: fake 1s infinite;
+          animation: fake 1s infinite;
+}
+
+.worko-tabs {
+  margin: 0px auto;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0px 50px;
+}
+.worko-tabs .state {
+  position: absolute;
+  left: -10000px;
+}
+.worko-tabs .flex-tabs {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.worko-tabs .flex-tabs .tab {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  max-height:400px;
+  text-align: center;
+}
+.worko-tabs .flex-tabs .panel {
+  background-color: #371542; /* color fondo contenido */
+  padding: 50px;
+  min-height: 200px;
+  display: none;
+  width: 100%;
+  -webkit-flex-basis: auto;
+      -ms-flex-preferred-size: auto;
+          flex-basis: auto;
+}
+.worko-tabs .tab {
+  display: inline-block;
+  padding: 10px;
+  vertical-align: top;
+  /*background-color: #eee;*/ /* color fondo tablas inactivas*/
+  cursor: hand;
+  cursor: pointer;
+  border-bottom: 10px solid #1e0726; /* color borde botones */
+
+  font: 400 30px 'Just Another Hand';
+  letter-spacing: 1px;
+  color: #fff;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.worko-tabs .tab:hover {
+  background-color: #371542;
+  color: #999; /*color texto al estar sobre boton */
+
+  -webkit-transition: all 0.2s ease-in-out; 
+  -moz-transition: all 0.2s ease-in-out; 
+  -ms-transition: all 0.2s ease-in-out; 
+  -o-transition: all 0.2s ease-in-out; 
+  transition: all 0.2s ease-in-out;
+}
+
+#tab-uno:checked ~ .tabs #tab-uno-label,
+#tab-dos:checked ~ .tabs #tab-dos-label,
+#tab-tres:checked ~ .tabs #tab-tres-label,
+#tab-cuatro:checked ~ .tabs #tab-cuatro-label,
+#tab-cinco:checked ~ .tabs #tab-cinco-label,
+#tab-seis:checked ~ .tabs #tab-seis-label,
+#tab-siete:checked ~ .tabs #tab-siete-label {
+  background-color: #371542; /* fondo color estado presionado */
+  cursor: default;
+  border-bottom-color: #69be28;
+  color: #999;
+}
+
+#tab-uno:checked ~ .tabs #tab-uno-panel,
+#tab-dos:checked ~ .tabs #tab-dos-panel,
+#tab-tres:checked ~ .tabs #tab-tres-panel,
+#tab-cuatro:checked ~ .tabs #tab-cuatro-panel,
+#tab-cinco:checked ~ .tabs #tab-cinco-panel,
+#tab-seis:checked ~ .tabs #tab-seis-panel,
+#tab-siete:checked ~ .tabs #tab-siete-panel {
+  display: block;
+}
+
+/***************************************************************/
+
+.icono {
+  display: block;
+}
+
+.icono img {
+  width: 80%;
+  max-width: 130px;
+  height: auto;
+  margin: auto;
+}
+
+.textos-huepil {
+  color: #fff;
+}
+
+.textos-huepil h2 {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+  color: #FFF;
+}
+
+.textos-huepil h3 {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: left;
+  color: #FFF;
+  padding-top: 20px;
+}
+
+.textos-huepil p {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: justify;
+  margin: 10px 0px;
+}
+
+.textos-huepil ul {
+  padding: 10px 0px 10px 40px;
+}
+
+.textos-huepil li {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  color: #FFF;
+  margin: 5px 0px;
+}
+
+/********************************/
+
+.huepil {
+  padding: 0px 50px 30px 50px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0px auto 0px auto;
+}
+
+.huepil h1 {
+  width: 100%;
+  font-size: 30px;
+  font-weight: 900;
+  text-align: left;
+  color: #FFF;
+  padding: 30px 0px 10px 0px;
+}
+
+.huepil h1 span {
+  width: 100%;
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+  color: #FFF;
+}
+
+.huepil h2 {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+  color: #FFF;
+  padding-top: 20px;
+}
+
+.huepil p {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: justify;
+  color: #FFF;
+  margin: 10px 0px;
+}
+
+.huepil a {
+  width: 300px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #FFF;
+    margin: 10px 0px;
+    display: block;
+}
+
+.huepil a img {
+    width: 30px;
+    height: auto;
+}
+
+.huepil a:hover {
+    opacity: 0.5;
+}
+
+.huepil table {
+  margin:0px auto;
+  width:100%;
+  max-width: 1200px;
+}
+
+.huepil td {
+  font-size: 14px;
+  font-weight: 400;
+  color: #FFF;
+  padding: 10px;
+  border: 1px solid #5f2a70;
+  text-align: center;
+}
+
+.huepil td span{
+  font-size: 14px;
+  font-weight: 900;
+  text-align: center;
+  display: block;
+}
+
+.huepil-div1 {
+  color: #FFF;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 20px 10px 20px 0px;
+  text-align: center;
+  display: inline-block;
+}
+
+.huepil-div2 {
+  display: block;
+  color: #FFF;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 20px 0px;
+  width: 100%;
+  text-align: left;
+}
+
+.mostrar-huepil {display: block;}
+.ocultar-huepil {display: none;}
+
+
+/****************************************************responsive ***********************************/
+/****************************************************responsive ***********************************/
+/****************************************************responsive ***********************************/
+/****************************************************responsive ***********************************/
+
+
+@media (max-width: 768px) {
+
+.mostrar-huepil {display: none;}
+.ocultar-huepil {display: block;}
+
+.huepil {
+  padding: 0px 20px 30px 20px;
+}
+
+.huepil-div1 {
+  color: #FFF;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 20px 0px;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+.worko-tabs {
+  padding: 0px 20px;
+}
+
+.worko-tabs .tab {
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+
+}
+
+.worko-tabs .tab:hover {
+  background-color: #371542;
+  color: #fff; /*color texto al estar sobre boton */
+
+  -webkit-transition: all 0.2s ease-in-out; 
+  -moz-transition: all 0.2s ease-in-out; 
+  -ms-transition: all 0.2s ease-in-out; 
+  -o-transition: all 0.2s ease-in-out; 
+  transition: all 0.2s ease-in-out;
+}
+
+.worko-tabs .flex-tabs .panel {
+  background-color: #5f2a70; /* color fondo contenido */
+  padding: 20px 0px;
+  min-height: 200px;
+  display: none;
+  width: 100%;
+  -webkit-flex-basis: auto;
+      -ms-flex-preferred-size: auto;
+          flex-basis: auto;
+}
+
+  .flex-tabs {
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+   -webkit-flex-direction: column;
+       -ms-flex-direction: column;
+           flex-direction: column;
+  }
+  .flex-tabs .tab {
+    background: #ff6600;
+    border-bottom: 1px solid #ccc;
+    color: #fff;
+  }
+  .flex-tabs .tab:last-of-type {
+    border-bottom: none;
+  }
+  .flex-tabs #tab-uno-label {
+            -webkit-box-ordinal-group: 2;
+            -webkit-order: 1;
+                -ms-flex-order: 1;
+                    order: 1;
+  }
+  .flex-tabs #tab-dos-label {
+            -webkit-box-ordinal-group: 4;
+            -webkit-order: 3;
+                -ms-flex-order: 3;
+                    order: 3;
+  }
+  .flex-tabs #tab-tres-label {
+            -webkit-box-ordinal-group: 6;
+            -webkit-order: 5;
+                -ms-flex-order: 5;
+                    order: 5;
+  }
+  .flex-tabs #tab-cuatro-label {
+            -webkit-box-ordinal-group: 8;
+            -webkit-order: 7;
+                -ms-flex-order: 7;
+                    order: 7;
+  }
+
+
+  .flex-tabs #tab-cinco-label {
+            -webkit-box-ordinal-group: 10;
+            -webkit-order: 9;
+                -ms-flex-order: 9;
+                    order: 9;
+  }
+  .flex-tabs #tab-seis-label {
+            -webkit-box-ordinal-group: 12;
+            -webkit-order: 11;
+                -ms-flex-order: 11;
+                    order: 11;
+  }
+  .flex-tabs #tab-siete-label {
+            -webkit-box-ordinal-group: 14;
+            -webkit-order: 13;
+                -ms-flex-order: 13;
+                    order: 13;
+  }
+
+
+  .flex-tabs #tab-uno-panel {
+            -webkit-box-ordinal-group: 3;
+            -webkit-order: 2;
+                -ms-flex-order: 2;
+                    order: 2;
+  }
+  .flex-tabs #tab-dos-panel {
+            -webkit-box-ordinal-group: 5;
+            -webkit-order: 4;
+                -ms-flex-order: 4;
+                    order: 4;
+  }
+  .flex-tabs #tab-tres-panel {
+            -webkit-box-ordinal-group: 7;
+            -webkit-order: 6;
+                -ms-flex-order: 6;
+                    order: 6;
+  }
+  .flex-tabs #tab-cuatro-panel {
+            -webkit-box-ordinal-group: 9;
+            -webkit-order: 8;
+                -ms-flex-order: 8;
+                    order: 8;
+  }
+
+
+  .flex-tabs #tab-cinco-panel {
+            -webkit-box-ordinal-group: 11;
+            -webkit-order: 10;
+                -ms-flex-order: 10;
+                    order: 10;
+  }
+  .flex-tabs #tab-seis-panel {
+            -webkit-box-ordinal-group: 13;
+            -webkit-order: 12;
+                -ms-flex-order: 12;
+                    order: 12;
+  }
+  .flex-tabs #tab-siete-panel {
+            -webkit-box-ordinal-group: 15;
+            -webkit-order: 14;
+                -ms-flex-order: 14;
+                    order: 14;
+  }
+
+  #tab-uno:checked ~ .tabs #tab-uno-label,
+  #tab-dos:checked ~ .tabs #tab-dos-label,
+  #tab-tres:checked ~ .tabs #tab-tres-label,
+  #tab-cuatro:checked ~ .tabs #tab-cuatro-label,
+  #tab-cinco:checked ~ .tabs #tab-cinco-label,
+  #tab-seis:checked ~ .tabs #tab-seis-label,
+  #tab-siete:checked ~ .tabs #tab-siete-label {
+    border-bottom: none;
+    color: #371542;
+    background-color: #fff;
+  }
+
+  #tab-uno:checked ~ .tabs #tab-uno-panel,
+  #tab-dos:checked ~ .tabs #tab-dos-panel,
+  #tab-tres:checked ~ .tabs #tab-tres-panel,
+  #tab-cuatro:checked ~ .tabs #tab-cuatro-panel,
+  #tab-cinco:checked ~ .tabs #tab-cinco-panel,
+  #tab-seis:checked ~ .tabs #tab-seis-panel,
+  #tab-siete:checked ~ .tabs #tab-siete-panel {
+    border-top: 1px solid #ccc;
+      padding: 25px;
+    background-color: #371542; /* fondo color estado presionado */
+      
+  }
+    
+
+.huepil h1 {
+  font-size: 20px;
+}
+
+.huepil h1 span {
+  font-size: 20px;
+}
+
+.huepil h2 {
+  font-size: 16px;
+}    
+    
+.textos-huepil p {
+  text-align: left;
+    font-size: 12px;
+}
+
+
+}

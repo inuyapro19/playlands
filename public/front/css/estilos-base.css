@@ -1,0 +1,630 @@
+@charset "utf-8";
+/* CSS Document By Fizz Estudio Gráfico - www.fizz.cl */
+@import url("font-awesome/css/font-awesome.min.css"); /* Icons */
+/*@import url("normalize.css");/*  Reset Reloaded + HTML5 baseline */
+@import url(https://fonts.googleapis.com/css?family=Just+Another+Hand|Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
+@import url(https://fonts.googleapis.com/css?family=Fredoka+One);
+@import url("reseteo.css");
+@import url("header.css");
+@import url("footer.css");
+@import url("galeria.css");
+@import url("servicios.css");
+@import url("quienes-somos.css");
+@import url("huepil.css");
+@import url("animate.css");
+@import url("parallax.css");
+@import url("convenios.css");
+
+
+.mostrar-pc {display: inline-block;}
+.ocultar-pc {display: none;}
+
+
+/**************************************** BIENVENIDOS ***********************************************/
+.barra-bienvenidos {
+	width: 100%;
+	height: auto;
+	background-color: #ff0068;
+}
+
+.barra-bienvenidos h2{
+	color: #FFF;
+	margin: 0px auto;
+	font: 400 70px 'Just Another Hand';
+	text-align: center;
+	padding: 35px 30px 30px 30px;
+
+}
+
+.contenedor-bienvenidos {
+	background-image: url(../imagenes/bienvenidos.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 100% cover;
+	width: 100%;
+}
+
+.contenedor-texto-bienvenidos {
+	width: 100%;
+	max-width: 1200px;
+	padding: 0px 50px;
+	margin: auto;
+	height: 650px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+
+.contenedor-texto-bienvenidos h1{
+	font-size: 50px;
+	line-height: 50px;
+	font-weight: 900;
+	text-align: left;
+	color: #FFF;
+	width: 40%;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+	margin-bottom: 20px;
+}
+
+.contenedor-texto-bienvenidos h2{
+	font-size: 40px;
+	line-height: 40px;
+	font-weight: 300;
+	text-align: left;
+	color: #FFF;
+	width: 40%;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+}
+
+/**************************************** SERVICIOS ***********************************************/
+/*
+.contenedor-servicios {
+	width: 100%;
+	background-color: #780068;
+}
+
+.contenedor-cajas {
+	width: 100%;
+	max-width: 1200px;
+	padding: 0px 50px;
+	margin: auto;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-around;
+	    -ms-flex-pack: justify;
+	        justify-content: space-around;
+}
+
+.caja {
+	width: 340px;
+	height: auto;
+	padding: 50px 0px;
+}
+
+.caja img {
+	width: 100%;
+	height: auto;
+    border-radius: 5px;
+}
+
+.caja h1 {
+	width: 100%;
+	font-size: 30px;
+	font-weight: 900;
+	text-align: center;
+	color: #FFF;
+	margin: 10px 0px;
+}
+
+.caja p {
+	width: 100%;
+	font-size: 16px;
+	font-weight: 400;
+	text-align: center;
+	color: #FFF;
+	margin-bottom: 20px;
+}
+
+.caja a {
+	padding: 15px;
+	width: 150px;
+	background-color: #016B69;
+	font-size: 16px;
+	font-weight: 900;
+	text-align: center;
+	margin: auto;
+	color: #FFF;
+	text-decoration: none;
+	display: block;
+}
+
+.caja a:hover {
+	background-color: #513d54;
+}
+
+.caja-margen {
+	margin: 0px 10px;
+}
+
+.caja-last {
+	padding-bottom: 0px;
+}
+*/
+
+.contenedor-servicios {
+	width: 100%;
+	background-color: #780068;
+}
+
+.contenedor-cajas {
+	width: 100%;
+	max-width: 1200px;
+	padding: 20px 50px;
+	margin: auto;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+
+.contenedor-cajas img {
+	width: 100%;
+	height: auto;
+}
+
+.contenedor-cajas-texto h1 {
+	width: 100%;
+	font-size: 30px;
+	font-weight: 900;
+	text-align: center;
+	color: #FFF;
+	margin: 10px 0px;
+}
+
+.contenedor-cajas-texto {
+	font-size: 40px;
+	font-weight: 300;
+	text-align: right;
+	color: #FFF;
+	line-height: 45px;
+	margin-right: -25px;
+	margin-left: 10px;
+}
+
+.contenedor-cajas p {
+	width: 100%;
+	font-size: 16px;
+	font-weight: 400;
+	text-align: left;
+	color: #FFF;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	margin-right: 5px;
+}
+
+.contenedor-cajas-texto a {
+	padding: 15px;
+	width: 150px;
+	background-color: #016B69;
+	font-size: 16px;
+	font-weight: 900;
+	text-align: center;
+	margin: auto;
+	color: #FFF;
+	text-decoration: none;
+	display: block;
+}
+
+.ver-mas a:hover {
+	background-color: #513d54;
+}
+
+.caja-margen {
+	margin: 0px 10px;
+}
+
+.caja-last {
+	padding-bottom: 0px;
+}
+
+@media (min-width: 768px) {
+
+.contenedor-cajas-texto { text-align: left; }
+.contenedor-cajas-texto h1 { text-align: left; margin-left: 20px; }
+.contenedor-cajas-texto a { margin-left: 20px; }
+}
+
+/*********************************************** PADRES ********************************************/
+
+.padres {
+	width: 100%;
+	background-color: #FA9600;
+}
+
+.contenedor-padres {
+	width: 100%;
+	max-width: 1200px;
+	padding: 20px 50px;
+	margin: auto;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+.caja-padres-texto {
+	width: 35%;
+	height: auto;
+	padding: 50px 0px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+
+.caja-padres-texto h1 {
+	font-size: 40px;
+	font-weight: 300;
+	text-align: left;
+	color: #FFF;
+	line-height: 45px;
+}
+
+.caja-padres-texto h1 span{
+	font-size: 40px;
+	font-weight: 900;
+	text-align: left;
+	color: #FFF;
+	line-height: 45px
+}
+
+.caja-padres-texto h2 {
+	font-size: 20px;
+	font-weight: 300;
+	text-align: left;
+	color: #FFF;
+	line-height: 25px;
+	padding-top: 10px;
+}
+
+.contenedor-padres img {
+	width: 64%;
+	height: auto;
+}
+
+
+/*********************************************** FACEBOOK ********************************************/
+
+.seccion-facebook {
+	width: 100%;
+	background-image: url(../imagenes/fondo-facebook.jpg);
+	background-repeat: repeat;
+}
+
+.contenedor-facebook {
+	width: 100%;
+	max-width: 1000px;
+	padding: 20px 50px;
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+}
+
+.texto-facebook {
+	width: 44%;
+	height: auto;
+	padding: 50px 50px 10px 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.texto-facebook h1 {
+	font-size: 50px;
+	font-weight: 900;
+	color: #018AD2;
+	line-height: 55px;
+	text-align: center;
+}
+
+.texto-facebook h2 {
+	font-size: 50px;
+	font-weight: 300;
+	color: #018AD2;
+	line-height: 55px;
+	text-align: center;
+}
+
+.texto-facebook-dedo {
+	width: 50%;
+	margin: 0px auto;
+}
+
+.texto-facebook-dedo img {
+	width: 100%;
+	height: auto;
+	padding-top: 15px;
+}
+
+.fanpage {
+	width: 55%;
+	position: relative;
+	left: 0;
+}
+
+
+/******************************** MODO RESPONSIVO ****************************/
+/********************************      1200       ****************************/
+/******************************** MODO RESPONSIVO ****************************/
+
+@media (max-width: 1200px) {
+
+.caja {
+	width: 270px;
+	padding: 50px 0px 0px 0px;
+}
+
+.caja-last {
+	padding-bottom: 50px;
+}
+
+.contenedor-cajas {
+	-webkit-justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	        justify-content: space-around;
+}
+
+
+}
+/******************************** MODO RESPONSIVO ****************************/
+/********************************      1000       ****************************/
+/******************************** MODO RESPONSIVO ****************************/
+
+@media (max-width: 1000px) {
+
+.contenedor-facebook {
+	width: 100%;
+	max-width: 1000px;
+	padding: 20px 50px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.texto-facebook {
+	width: 100%;
+	height: auto;
+	padding: 50px 50px 10px 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.texto-facebook-dedo {
+	width: 15%;
+	margin: auto;
+}
+
+.texto-facebook-dedo img {
+	width: 100%;
+	height: auto;
+}
+
+.fanpage {
+	width: 100%;
+	position: static;
+	display: block;
+	text-align: center;
+}
+
+.caja-padres-texto h1 {
+	font-size: 30px;
+	line-height: 35px;
+}
+
+.caja-padres-texto h1 span{
+	font-size: 30px;
+	line-height: 35px;
+}
+
+.caja-padres-texto h2 {
+	font-size: 15px;
+	line-height: 20px;
+}
+
+}
+
+/******************************** MODO RESPONSIVO ****************************/
+/********************************       768       ****************************/
+/******************************** MODO RESPONSIVO ****************************/
+
+@media (max-width: 768px) {
+
+.mostrar-pc {display: none;}
+.ocultar-pc {display: inline-block;}
+.mostrar-imagen {display: none;}
+.contenedor-cajas p {padding-right: 10px; margin-left: 5px;}
+.contenedor-cajas-texto a{margin-bottom: 10px;}
+
+/**************************************** BIENVENIDOS ***********************************************/
+
+.barra-bienvenidos h2 {
+	font-size: 35px;
+	padding: 20px 15px 15px 15px;
+}
+
+.contenedor-bienvenidos {
+	background-image: url(../imagenes/bienvenidos.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%; 
+}
+
+.contenedor-texto-bienvenidos {
+	height: 400px;
+	padding: 0px 20px;
+}
+
+.contenedor-texto-bienvenidos h1{
+	font-size: 25px;
+	line-height: 25px;
+	margin-bottom: 15px;
+	width: 70%;
+}
+
+.contenedor-texto-bienvenidos h2{
+	font-size: 18px;
+	line-height: 20px;
+	width: 70%;
+}
+
+/**************************************** SERVICIOS ***********************************************/
+
+.contenedor-cajas {
+	padding: 0px 20px;
+}
+
+.caja {
+	width: 100%;
+	height: auto;
+	padding: 50px 10px 0px 10px;
+}
+
+.caja-last {
+	padding-bottom: 50px;
+}
+
+/************************************* PADRES ************************************************/
+
+.contenedor-padres {
+	padding: 20px 20px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+
+.caja-padres-texto {
+	width: 100%;
+	padding: 20px 0px;
+}
+
+.caja-padres-texto h1 {
+	font-size: 30px;
+	text-align: center;
+	line-height: 35px;
+}
+
+.caja-padres-texto h1 span{
+	font-size: 30px;
+	text-align: center;
+	line-height: 35px
+}
+
+.caja-padres-texto h2 {
+	font-size: 20px;
+	text-align: center;
+	line-height: 25px;
+}
+
+.contenedor-padres img {
+	width: 100%;
+	height: auto;
+}
+
+/************************************* FACEBOOK ***************************************/
+
+
+.contenedor-facebook {
+	padding: 20px 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.texto-facebook {
+	width: 100%;
+	padding: 20px 50px 20px 50px;
+}
+
+.texto-facebook h1 {
+	font-size: 25px;
+	line-height: 30px;
+	margin: 0px;
+	padding: 0px
+}
+
+.texto-facebook h2 {
+	font-size: 25px;;
+	line-height: 30px;
+	margin: 0px;
+	padding: 0px;
+}
+
+.texto-facebook img {
+	width: 100%;
+	max-width: 200px;
+	height: auto;
+	margin: auto;
+}
+
+.fanpage {
+	width: 100%;
+	position: none;
+}
+
+
+}

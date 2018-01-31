@@ -1,0 +1,135 @@
+/* ============================================================
+  SECTIONS
+============================================================ */
+section.module:last-child {
+  margin-bottom: 0;
+}
+section.module h2 {
+  margin-bottom: 40px;
+  /*font-family: "Roboto Slab", serif;*/
+  font-size: 30px;
+}
+section.module p {
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 300;
+}
+section.module p:last-child {
+  margin-bottom: 0;
+}
+section.module.content {
+  padding: 40px 0;
+}
+section.module.parallax {
+  height: 200px;
+    
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+
+    
+  -webkit-background-attachment: scroll;    
+  background-attachment: scroll;
+
+    
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    
+    display: -webkit-box;
+    
+    display: -ms-flexbox;
+    
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    
+}
+
+section.module.parallax h1 {
+  /*color: rgba(255, 255, 255, 0.8);
+  font-size: 48px;
+  line-height: 200px;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;*/
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  -webkit-text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  font-size: 30px;
+  font-weight: 900;
+  text-align: center;
+  color: #FFF;
+}
+
+section.module.parallax h1 span {
+  width: 100%;
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+  color: #FFF;
+}
+
+
+
+
+section.module.parallax-1 {
+  background-image: url("../imagenes/parallax1.jpg");    
+}
+
+section.module.parallax-2 {
+  background-image: url("../imagenes/parallax2.jpg");
+}
+section.module.parallax-3 {
+  background-image: url("../imagenes/parallax3.jpg");
+}
+
+/**************************************/
+
+@media all and (min-width: 600px) {
+    
+section.module.parallax {
+  height: 400px;    
+  background-attachment: fixed;
+}   
+    
+section.module h2 {
+    font-size: 50px;
+  }
+    
+section.module.parallax h1 {
+    font-size: 50px;
+  }
+section.module.parallax h1 span {
+  width: 100%;
+  font-size: 50px;
+  font-weight: 300;
+  text-align: center;
+  color: #FFF;
+}
+}
+
+/*************************************/
+@media all and (min-width: 960px) {
+    
+section.module.parallax {
+  height: 400px;    
+  background-attachment: fixed;
+}   
+
+section.module.parallax h1 {
+    font-size: 70px;
+  }
+    
+section.module.parallax h1 span {
+  width: 100%;
+  font-size: 70px;
+  font-weight: 300;
+  text-align: center;
+  color: #FFF;
+}
+}
